@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: Ampersand;
+    src: url("../fonts/amsterdam/amsterdam-four-ttf.ttf");
+}
+@font-face {
+    font-family: Kollektif;
+    src: url("../fonts/kollektif/Kollektif.ttf");
+} 
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer{
+    background-color: #0F0346;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-list ul,
+.nav-btn-list ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.nav-list a,
+.btn-items a{
+    text-decoration: none;      
+    color: white;
+    font-size: 22px;
+   
+    padding: 10px 20px;
+}
+.btn-items__bg button{
+    text-decoration: none;
+    color: #0F0346;
+    font-size: 22px;
+    padding: 14px 28px;
+    border-radius: 27px;
+    cursor: pointer;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.title-heading h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #737373;
+    font-weight: 700;
+}
+
+.title-heading h2:nth-child(2) {
+    font-weight: 500;
+}
+.google-btn {
+    padding: 15px 0px;
+}
+#google-btn {
+    background-color: transparent;
+    border: unset;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #737373;
+    cursor: pointer;
+}
+#google-btn img {
+    margin-right: 18px;
+}
+
+.login-form{
+    width: 80%;
+}
+
+.form-input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+}
+
+.login-form label {
+    color: #737373;
+    font-size: 20px;
+    line-height: 31px;
+    padding: 0px 0px 9px 0px;
+}
+
+.login-form input {
+    font-size: 20px;
+    color: #737373;
+    border: 1px solid #d3d3d3;
+    border-radius: 34px;
+    padding: 12px 0px;
+}
+
+.form-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot-btn {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0f0346;
+    line-height: 28px;
+}
+
+.form-checkbox {
+    font-size: 18px;
+    font-weight: 400;
+    color: #737373;
+    line-height: 28px;
+}
+
+input#rememberMe {
+    width: 18px;
+    height: 18px;
+}
+
+.form-login-btn {
+    padding: 30px 0px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-login {
+    background: linear-gradient(254deg, rgba(48,226,252,1) 0%, rgba(159,77,253,1) 98%);
+    border: unset;
+    font-size: 18px;
+    color: white;
+    padding: 10px 42px;
+}
+
+.btn-signUp {
+    background-color: transparent;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #737373;
+    padding: 10px 42px;
+    border: 1px solid #737373;
+}
+
+.banner-box {
+    background: linear-gradient(254deg, rgba(48,226,252,1) 0%, rgba(159,77,253,1) 98%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-title-heading,
+.box-sub-heading {
+    color: white;
+    text-align: center;
+}
+
+.banner-box h2:nth-child(1){
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Ampersand';
+    line-height: 160px;
+}
+
+.banner-box h2:nth-child(2){
+    font-size: 94px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    line-height: 62px;
+}
+
+.banner-box h2:nth-child(3){
+    font-size: 180px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 180px;
+}
+
+p.box-sub-heading {
+    width: 70%;
+    font-weight: 400;
+    font-family: 'Kollektif';
+}
+
+.divider {
+    border: 3px solid white;
+    width: 107px;
+    margin: 0px 0px 24px;
+}
+
+
+/* REGISTRATION */
+
+.registration_main{
+    background: url(../img/register-background.png) center no-repeat;
+    background-size: cover;
+}
+
+.registration_main .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form{
+    max-width: 900px;
+    min-width: 250px;
+    width: 600px;
+}
+
+.registration-form form{
+    background-color: #e7f2fa;
+}
+
+.registration-form .form-header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.registration-form .form-header .form-header__heading{
+    color: #737373;
+}
+
+.registration-form .form-header .form-header__back{
+    text-decoration: none;
+    color: #0F0346;
+    box-sizing: border-box;
+    border: 1px solid #0F0346;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.registration-form .form-header .form-header__signUp{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #0F0346;
+    border-radius: 20px;
+}
+
+.registration-form .form-body{
+    padding: 1.5rem 2.5rem;
+}
+
+.reg-module{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.reg-teacher, .reg-student{
+    padding: .8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.student_module_img, .teacher_module_img {
+    height: 80%;
+}
+
+.registration-form form{
+    border-radius: 20px;
+}
+
+.registration-form .form-header{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.reg-name,
+.reg-password{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-name div label,
+.reg-password div label{
+    font-size: 1rem;
+    color: #737373;
+    margin: .6rem 0;
+}
+
+.registration-form form input{
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #737373;
+}
+
+.form-body .reg-username,
+.form-body .reg-email,
+.form-body .reg-language{
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form form label{
+    margin: .6rem 0;
+}
+
+.reg-name div,
+.reg-password div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    width: 45%;
+}
+
+.register_submit_button{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+}
+
+.register_submit_button button{
+    border: none;
+    outline: none;
+    background: url('/Assets/img/register-background.png') center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: .5rem;
+}
