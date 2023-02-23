@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
+    padding: 40px 0;
     gap: 40px;
 }
 .single-course_content{
@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     background-color: #0F0346;
-    width: 90%;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
 }
@@ -697,4 +697,119 @@
     flex-direction: column;
     gap: 30px;
     padding: 2rem;
+}
+
+@media only screen and (max-width: 1199px){
+    .single_course_wrapper{
+        flex-direction: column;
+    }
+
+    .single-course_nav ul{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .single-course_nav ul li{
+        flex-basis: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .single-course_right{
+        width: 100%;
+    }
+
+    .single-course-progress{
+        flex-direction: column-reverse;
+    }
+
+    .single-course-column .percentage{
+        display: grid !important;
+        place-items: center !important;
+    }
+
+    #myChartNew{
+        height: 80% !important;
+        width: 80% !important;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .single-course-column{
+        width: 100%;
+    }
+
+    .single-course-column.incomplete{
+        padding: 1rem;
+    }
+
+    .single-course_header.course-image{
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 680px ){
+    .single-course__head{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .single-course_header{
+        width: initial;
+    }
+
+    .single-course_header.course-date{
+        flex-basis: 100%;
+    }
+
+    .single-course_header.course-date p{
+        text-align: center;
+    }
+
+    .single-course_header.course-date{
+        align-items: initial;
+    }
+}
+
+@media only screen and (max-width: 576px ){
+    .single-course_nav ul li{
+        flex-basis: 45%;
+    }
+
+    .accordion-content-item span{
+        font-size: 12px;
+    }
+
+    .class-info{
+        flex-direction: column;
+    }
+
+    .class-info_col.class-hours,
+    .class-info_col.class-date{
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 425px ){
+    .single-course__head{
+        justify-content: center;
+    }
+
+    .single-course_header p{
+        text-align: center;
+    }
+
+    .single-course_nav ul li{
+        flex-basis: 100%;
+        justify-content: flex-start;
+    }
+
+    .single-course_nav ul li button{
+        text-align: left;
+    }
 }

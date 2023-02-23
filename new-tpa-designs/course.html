@@ -30,59 +30,69 @@
   <aside class="sidebar">
     <div class="sidebar-start">
         <div class="sidebar-head">
-            <a href="/" class="logo-wrapper" title="Home">
+            <a href="./index.html" class="logo-wrapper" title="Home">
             <img src="./Assets/img/logo-removebg-preview.png" alt="Site Logo" width="100">
             </a>
         </div>
         <div class="sidebar-body">
             <ul class="sidebar-body-menu">
                 <li>
-                    <a class="show-cat-btn" href="./dashboard.html"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
-                </li>
-                <li>
-                    <a class="show-cat-btn active" href="./course.html">
-                        <span class="icon document" aria-hidden="true"></span>Course
+                    <a class="show-cat-btn" href="./dashboard.html">
+                      <i class="icon fa fa-th-large" aria-hidden="true"></i>Dashboard
                     </a>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="##">
+                    <a class="show-cat-btn active" href="./course.html">
+                      <i class="icon fa fa-file-text" aria-hidden="true"></i>Course
+                    </a>
+                </li>
+                <li>
+                    <a class="show-cat-btn" href="./progress.html">
                       <i class="icon fa fa-check-circle-o" aria-hidden="true"></i>Progress
                     </a>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="##">
+                    <a class="show-cat-btn" href="./grade.html">
                       <i class="icon fa fa-graduation-cap" aria-hidden="true"></i>Grade
                     </a>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="##">
+                    <a class="show-cat-btn" href="./calendar.html">
                       <i class="icon fa fa-calendar" aria-hidden="true"></i>Calendar
                     </a>
                 </li>
                 <li>
-                    <a href="comments.html">
+                    <a class="show-cat-btn" href="./chat.html">
                       <i class="icon fa fa-comment" aria-hidden="true"></i>
                         Messages
                     </a>
                     <!-- <span class="msg-counter">7</span> -->
                 </li>
                 <li>
-                  <a href="tutor.html">
-                      <i class="icon fa fa-question" aria-hidden="true"></i>
+                  <a class="show-cat-btn" href="tutor.html">
+                      <i class="icon fa fa-user" aria-hidden="true"></i>
                       Find Tutor
                   </a>
-              </li>
+                </li>
+                <li>
+                  <a class="show-cat-btn" href="./help.html">
+                      <i class="icon fa fa-question" aria-hidden="true"></i>
+                      Help
+                  </a>
+                </li>
             </ul>
         </div>
     </div>
     <div class="sidebar-footer">
       <ul class="sidebar-body-menu" style="color: white;">
           <li>
-            <i class="icon setting fa fa-wrench" aria-hidden="true" ></i>Settings</a>
+            <a class="show-cat-btn" href="./settings.html">
+              <i class="icon setting fa fa-wrench" aria-hidden="true" ></i>Settings
+            </a>
           </li>
       </ul>
     </div>
-</aside>
+  </aside>
   <div class="main-wrapper">
     <!-- ! Main nav -->
     <nav class="main-nav--bg">
@@ -176,9 +186,9 @@
       </div>
     </nav>
     <!-- ! Main -->
-    <main class="main users chart-page" id="skip-target">
+    <main class="main users course-page" id="skip-target">
       <div class="main-start">
-        <div class="container enrolled-course-container">
+        <div class="enrolled-course-container">
           <div class="enrolled-course-row">
             <h2 class="main-title">Enrolled Course</h2>
             <div class="tutor">
@@ -239,7 +249,7 @@
             </div>
           </div>
         </div>
-        <div class="container find-tutor-conatiner">
+        <div class="find-tutor-conatiner">
           <div class="find-tutor-inner">
             <h2>FIND A TUTOR</h2>
             <p>Choose the tutor you want with the right qualifications and hourly rate</p>
@@ -255,7 +265,7 @@
               <li class="search-filter__grid fc-search-filter__grid"><a href="#fc-tab1"><i class="fa fa-th-large fa-2x" aria-hidden="true"></i></a></li>
               <li class="search-filter__list fc-search-filter__list"><a href="#fc-tab2"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></li>
               <li class="search-wrapper">
-                <input type="text" placeholder="Search" required>
+                <input type="text" class="carousel-search" placeholder="Search" required>
                 <i data-feather="search" aria-hidden="true"></i>
               </li>
             </ul>
@@ -344,7 +354,7 @@
               <li class="search-filter__grid cd-search-filter__grid"><a href="#cd-tab1"><i class="fa fa-th-large fa-2x" aria-hidden="true"></i></a></li>
               <li class="search-filter__list cd-search-filter__list"><a href="#cd-tab2"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a></li>
               <li class="search-wrapper">
-                <input type="text" placeholder="Search" required>
+                <input type="text" class="carousel-search" placeholder="Search" required>
                 <i data-feather="search" aria-hidden="true"></i>
               </li>
             </ul>
@@ -455,7 +465,7 @@
                   <h3 class="completed-container">4</h3>
                   <span>Completed Assignments</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="enroll-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -470,7 +480,7 @@
                   <h3 class="completed-container">4</h3>
                   <span>Completed Assignments</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="enroll-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -485,7 +495,7 @@
                   <h3 class="completed-container">4</h3>
                   <span>Completed Assignments</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="enroll-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -500,7 +510,7 @@
                   <h3 class="completed-container">4</h3>
                   <span>Completed Assignments</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="enroll-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -515,7 +525,7 @@
                   <h3 class="completed-container">4</h3>
                   <span>Completed Assignments</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="enroll-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -548,7 +558,7 @@
                   <h3 class="completed-container">24</h3>
                   <span>Coures</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="start-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -561,7 +571,7 @@
                   <h3 class="completed-container">24</h3>
                   <span>Coures</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="start-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -574,7 +584,7 @@
                   <h3 class="completed-container">24</h3>
                   <span>Coures</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="start-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -587,7 +597,7 @@
                   <h3 class="completed-container">24</h3>
                   <span>Coures</span>
                 </div>
-                <div>
+                <div class="start-now-box">
                   <a class="start-now-btn" href="#">Enroll Now</a>
                 </div>
               </div>
@@ -627,6 +637,12 @@
     draggable: true,
     pageDots: false
   });
+
+  if ( matchMedia('screen and (min-width: 1199px)').matches ) {
+    cellAlign: 'center'
+  }
+
+
 
   // FIND COURSES MODAL
   $('.check-course-btn_modal').on('click', function(e) {

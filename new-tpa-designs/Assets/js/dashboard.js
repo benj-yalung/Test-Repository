@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
   (function () {
-    Chart.defaults.backgroundColor = '#000';
+    // Chart.defaults.backgroundColor = '#000';
     var darkMode = localStorage.getItem('darkMode');
     var darkModeToggle = document.querySelector('.theme-switcher');
 
@@ -516,6 +516,27 @@ document.addEventListener('DOMContentLoaded', function () {
       charts.visitors.update();
     }
   }
+
+  window.addEventListener("resize", (e) => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 1199) {
+      moveInfobar();
+    }else if(windowWidth > 1200){
+      revertInfobar();
+    }
+  });
+
+
+  function moveInfobar() {
+    $('.infobar').appendTo('.page-dashboard')
+    $('.single-course_nav').insertAfter( ".single-course__head" );
+  }
+
+  function revertInfobar(){
+    $('.infobar').appendTo('.page-flex-dashboard')
+    $('.single-course_nav').insertBefore( ".single-course_info" );
+  }
+
 
   addData();
 });

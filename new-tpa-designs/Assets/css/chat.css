@@ -1,7 +1,6 @@
 .main-wrapper{
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
 }
 
 .chat-page{
@@ -31,7 +30,7 @@
 }
 
 .inbox-tabs{
-    height: 80%;
+    height: 100%;
 }
 
 .inbox-tabs-inner{
@@ -80,7 +79,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -133,6 +132,8 @@
 
 .chat-page{
     flex: 1 1 auto;
+    height: 90vh;
+    box-sizing: border-box;
 }
 
 .message-wrapper{
@@ -204,16 +205,16 @@
     display: flex;
     flex-direction: column;
     padding: 2.5rem;
-    height: 100%;
+    height: 90%;
     background-color: rgb(247,249,250);
 }
 
 .msg-box-display{
     display: flex;
     flex-direction: column;
-    height: 50%;
     overflow-y: scroll;
     padding-bottom: 1.5rem;
+    padding-right: 1rem;
 }
 
 .msg-box-display__date{
@@ -301,4 +302,81 @@
 .fa-paper-plane,
 .fa-thumbs-up{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 990px){
+    .message-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .inbox-text-btn h1{
+        font-size: 18px !important;
+        display: grid;
+        place-items: center;
+    }
+
+    .inbox-tabs-menu{
+        flex-direction: column;
+    }
+
+    .inbox-btn{
+        padding: .2rem;
+    }
+
+    .msg-box-display-bubble{
+        max-width: 80%;
+    }
+
+    .inbox-msgNew-item-info{
+        display: none;
+    }
+
+    .inbox-wrapper{
+        padding: 1rem;
+    }
+
+    .msg-profile-info{
+        order: 1;
+    }
+
+    .inbox-msgNew-item, .inbox-msg-item{
+        padding: 0;
+    }
+
+    .msg-box{
+        flex-basis: 100%;
+        padding: 1rem;
+        height: 70%;
+        box-sizing: border-box;
+    }
+
+    .msg-profile{
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .search-wrapper{
+        width: 85%;
+    }
+
+    .msg-sched-call{
+        order: 1;
+    }
+
+    .chat-page .search-wrapper input{
+        width: 100%;
+    }
+
+    .msg-sched-call-btn{
+        padding: .5rem;
+        font-size: 12px;
+    }
+    
+    .msg-profile-settings{
+        top: 1.3rem;
+    }
 }

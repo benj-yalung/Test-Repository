@@ -6,16 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Dashboard | Talent Pro Academy</title>
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="./Assets/img/logo-removebg-preview.png" type="image/x-icon">
+
   <!-- Custom styles -->
   <link rel="stylesheet" href="./Assets/css/dashboard.css">
-  <link rel="stylesheet" href="./Assets/css/dashboard-tab.css">
   <link rel="stylesheet" href="./Assets/css/settings.css">
-  <script src="./Assets/js/calendar.js" defer></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+
   <!-- Google Font Link for Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,59 +31,69 @@
 <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
 <div class="page-flex">
   <!-- ! Sidebar -->
-  <aside class="sidebar settings-sidebar">
+  <aside class="sidebar">
     <div class="sidebar-start">
         <div class="sidebar-head">
-            <a href="/" class="logo-wrapper" title="Home">
+            <a href="./index.html" class="logo-wrapper" title="Home">
             <img src="./Assets/img/logo-removebg-preview.png" alt="Site Logo" width="100">
             </a>
         </div>
         <div class="sidebar-body">
             <ul class="sidebar-body-menu">
                 <li>
-                    <a class="show-cat-btn" href="./dashboard.html"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
+                    <a class="show-cat-btn" href="./dashboard.html">
+                      <i class="icon fa fa-th-large" aria-hidden="true"></i>Dashboard
+                    </a>
                 </li>
                 <li>
                     <a class="show-cat-btn" href="./course.html">
-                        <span class="icon document" aria-hidden="true"></span>Course
+                      <i class="icon fa fa-file-text" aria-hidden="true"></i>Course
                     </a>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon folder" aria-hidden="true"></span>Progress
+                    <a class="show-cat-btn" href="./progress.html">
+                      <i class="icon fa fa-check-circle-o" aria-hidden="true"></i>Progress
                     </a>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon image" aria-hidden="true"></span>Grade
+                    <a class="show-cat-btn" href="./grade.html">
+                      <i class="icon fa fa-graduation-cap" aria-hidden="true"></i>Grade
                     </a>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon paper" aria-hidden="true"></span>Calendar
+                    <a class="show-cat-btn" href="./calendar.html">
+                      <i class="icon fa fa-calendar" aria-hidden="true"></i>Calendar
                     </a>
                 </li>
                 <li>
-                    <a href="comments.html">
-                        <span class="icon message" aria-hidden="true"></span>
+                    <a class="show-cat-btn" href="./chat.html">
+                      <i class="icon fa fa-comment" aria-hidden="true"></i>
                         Messages
                     </a>
                     <!-- <span class="msg-counter">7</span> -->
                 </li>
                 <li>
-                  <a href="tutor.html">
-                      <span class="icon message" aria-hidden="true"></span>
+                  <a class="show-cat-btn" href="tutor.html">
+                      <i class="icon fa fa-user" aria-hidden="true"></i>
                       Find Tutor
                   </a>
-              </li>
+                </li>
+                <li>
+                  <a class="show-cat-btn" href="./help.html">
+                      <i class="icon fa fa-question" aria-hidden="true"></i>
+                      Help
+                  </a>
+                </li>
             </ul>
         </div>
     </div>
     <div class="sidebar-footer">
-      <ul class="sidebar-body-menu">
-          <li>
-              <a class="active" href="##"><span class="icon setting" aria-hidden="true"></span>Settings</a>
-          </li>
+      <ul class="sidebar-body-menu" style="color: white;">
+        <li>
+          <a class="show-cat-btn active" href="./settings.html">
+            <i class="icon setting fa fa-wrench active" aria-hidden="true" ></i>Settings
+          </a>
+        </li>
       </ul>
     </div>
   </aside>
@@ -174,21 +191,22 @@
     </nav>
     <!-- ! Main -->
     <main class="main users settings-page" id="skip-target">
+      <div class="settings-menu">
+        <ul class="settings-menu-list">
+          <li class="settings-menu-item settings-menu-item--1"><a href="#settings-profile">Profile</a></li>
+          <li class="settings-menu-item settings-menu-item--2"><a href="#settings-billing">Billing</a></li>
+          <li class="settings-menu-item settings-menu-item--3"><a href="#settings-security">Security</a></li>
+          <li class="settings-menu-item settings-menu-item--4"><a href="#settings-completed-courses">Completed Courses</a></li>
+        </ul>
+      </div>
       <div class="settings-container">
-        <div class="settings-menu">
-          <ul class="settings-menu-list">
-            <li class="settings-menu-item settings-menu-item--1"><a href="#settings-profile">Profile</a></li>
-            <li class="settings-menu-item settings-menu-item--2"><a href="#settings-billing">Billing</a></li>
-            <li class="settings-menu-item settings-menu-item--3"><a href="#settings-security">Security</a></li>
-            <li class="settings-menu-item settings-menu-item--4"><a href="#settings-completed-courses">Completed Courses</a></li>
-          </ul>
-        </div>
         <div id="settings-profile" class="settings-profile">
           <div class="settings-profile-banner">
             <img src="./Assets/img/profile.png" alt="">
-            <a href="" class="change-profile-img">
-              Change Photo
-            </a>
+            <div class="settings-profile-banner-info">
+              <h2 class="change-profile-banner-name">Natisha Wolf</h2>
+              <a href="" class="change-profile-img-btn">Change Photo</a>
+            </div>
           </div>
           <div class="settings-profile-info">
             <h3>Profile</h3>
@@ -283,60 +301,33 @@
 
 <!-- Icons library -->
 <script src="plugins/feather.min.js"></script>
+
 <!-- Custom scripts -->
 <script src="./Assets/js/dashboard.js"></script>
-
-<!-- Chart JS library -->
-<script src="plugins/chart.min.js"></script>
 </body>
+</html>
+
 
 <script>
-  var ctx = document.getElementById('myChartNew').getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-          datasets: [{
-              data: [79,21],
-              backgroundColor: [
-                  'rgba(40, 237, 252)',
-                  'rgba(113, 142, 212)'
-              ],
-              borderWidth: 0,
-              height: 150,
-              width: 150
-          }]
+  (function () {
+    window.addEventListener("resize", (e) => {
+      const windowWidth = window.innerWidth;
+      if(windowWidth < 768){
+        settingNavMove();
+      }else{
+        resetNav()
       }
-  });
-  var myChart2 = new Chart(ctx2, {
-      type: 'doughnut',
-      data: {
-          datasets: [{
-              data: [79,21],
-              backgroundColor: [
-                  'rgba(40, 237, 252)',
-                  'rgba(113, 142, 212)'
-              ],
-              borderWidth: 0,
-              height: 150,
-              width: 150
-          }]
-      }
-  });
-  var myChart3 = new Chart(ctx3, {
-      type: 'doughnut',
-      data: {
-          datasets: [{
-              data: [79,21],
-              backgroundColor: [
-                  'rgba(40, 237, 252)',
-                  'rgba(113, 142, 212)'
-              ],
-              borderWidth: 0,
-              height: 150,
-              width: 150
-          }]
-      }
-  });
-</script>
+    });
 
-</html>
+
+    function settingNavMove(){
+      $('.settings-menu').insertBefore('.settings-profile-info')
+    }
+
+    function resetNav(){
+      $('.settings-menu').insertBefore('.settings-container')
+      console.log('hahaha')
+    }
+
+  })();
+</script>

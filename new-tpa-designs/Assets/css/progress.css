@@ -1,5 +1,6 @@
 .container-wapper {
     display: flex;
+    gap: 1rem;
 }
 .col-progress{
     width: 65%;
@@ -9,12 +10,17 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    justify-content: space-between;
 }
 
 /* CSS PROGRESS COLUMN */
+.progress-container{
+    padding: 1rem 2.5rem;
+}
+
 .progress__card{
     background-color: #92ADEF;
-    width: 90%;
+    /* width: 90%; */
     border-radius: 30px;
     display: flex;
     padding: 20px;
@@ -76,7 +82,8 @@ p.incomplete-number{
     background-color: #292567;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 2rem 20px;
+    margin-top: 51px;
 }
 .profile__head{
     display: flex;
@@ -130,7 +137,9 @@ p.incomplete-number{
     padding: 20px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: #fff;
+    flex-basis: 100%;
 }
 .find_tutor h2{
     color: #fff;
@@ -150,3 +159,119 @@ p.incomplete-number{
 }
 
 
+@media only screen and (max-width: 990px){
+    .progress-container .container-wapper{
+        flex-direction: column;
+    }
+
+    .col-progress{
+        width: 100%;
+    }
+
+    .col-profile{
+        width: 100%;
+    }
+
+    .profile__head{
+        display: initial;
+    }
+    
+    .image_col{
+        width: initial;
+        text-align: center;
+    }
+
+    .student_info_col{
+        width: initial;
+        padding: 0;
+        text-align: center;
+    }
+
+    .course-title{
+        font-size: 14px;
+    }
+
+    .course-percentage{
+        font-size: 18px;
+    }
+
+    .course-grade{
+        font-size: 14px;
+    }
+
+    #myChartNew,
+    #myChartNew2,
+    #myChartNew3{
+        height: 100px !important;
+        width: 100px !important;
+    }
+    
+    .completion-info{
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .progress-container{
+        padding: 1rem;
+    }
+
+    .course-title{
+        font-size: 12px;
+    }
+
+    .course-percentage{
+        font-size: 16px;
+    }
+
+    .course-grade{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    .progress__card{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .progress__col.course-info{
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .progress__col.course-progress, .progress__col.col3,
+    .parent-chartjs{
+        width: 100%;
+    }
+
+    .parent-chartjs{
+        display: grid;
+        place-items: center;
+    }
+
+    #myChartNew,
+    #myChartNew2,
+    #myChartNew3{
+        height: 200px !important;
+        width: 200px !important;
+    }
+    
+    .completion-info{
+        width: 100%;
+    }
+
+    .progress__col.col3{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .progress__col.col3 svg{
+        height: 3rem;
+    }
+}

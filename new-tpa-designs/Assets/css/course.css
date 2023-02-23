@@ -286,3 +286,30 @@ background-color: #fff;
 .hide{
   display: none;
 }
+
+.enrolled-course-container{
+  width: 100%;
+}
+
+.find-tutor-conatiner{
+  padding: 1rem 2.5rem;
+}
+
+
+@media only screen and (max-width: 1200px){
+  .find-tutor-conatiner{
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .modal-content{
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .find-tutor-inner{
+    width: 100%;
+  }
+}

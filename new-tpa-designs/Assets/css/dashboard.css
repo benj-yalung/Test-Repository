@@ -1252,7 +1252,7 @@ label {
     -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #0F0346!important;
-    width: 253px;
+    min-width: 253px;
     padding: 20px 15px 37px 20px;
     -webkit-transition: .5s all;
     -o-transition: .5s all;
@@ -2917,4 +2917,12 @@ label {
     -ms-flex-direction: column;
     flex-direction: column;
 }
+}
+
+
+@media only screen and (max-width: 1440px){
+    /* DASHBOARD */
+    .sidebar{
+        min-width: 180px;
+    }
 }
