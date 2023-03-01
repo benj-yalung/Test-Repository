@@ -93,6 +93,9 @@
     list-style-type: disc;
     margin-left: 20px;
 }
+.single-course_content.objective {
+    align-items: unset;
+  }
 /* Single Course Nav */
 .single-course_nav {
     width: 100%;
