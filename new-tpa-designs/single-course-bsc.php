@@ -24,165 +24,11 @@
 <!-- ! Body -->
 <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
 <div class="page-flex">
-  <!-- ! Sidebar -->
-  <aside class="sidebar">
-    <div class="sidebar-start">
-        <div class="sidebar-head">
-            <a href="./index.html" class="logo-wrapper" title="Home">
-            <img src="./Assets/img/logo-removebg-preview.png" alt="Site Logo" width="100">
-            </a>
-        </div>
-        <div class="sidebar-body">
-            <ul class="sidebar-body-menu">
-                <li>
-                    <a class="show-cat-btn" href="./dashboard.html">
-                      <i class="icon fa fa-th-large" aria-hidden="true"></i>Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a class="show-cat-btn active" href="./course.html">
-                      <i class="icon fa fa-file-text" aria-hidden="true"></i>Course
-                    </a>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="./progress.html">
-                      <i class="icon fa fa-check-circle-o" aria-hidden="true"></i>Progress
-                    </a>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="./grade.html">
-                      <i class="icon fa fa-graduation-cap" aria-hidden="true"></i>Grade
-                    </a>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="./calendar.html">
-                      <i class="icon fa fa-calendar" aria-hidden="true"></i>Calendar
-                    </a>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="./chat.html">
-                      <i class="icon fa fa-comment" aria-hidden="true"></i>
-                        Messages
-                    </a>
-                    <!-- <span class="msg-counter">7</span> -->
-                </li>
-                <li>
-                  <a class="show-cat-btn" href="tutor.html">
-                      <i class="icon fa fa-user" aria-hidden="true"></i>
-                      Find Tutor
-                  </a>
-                </li>
-                <li>
-                  <a class="show-cat-btn" href="./help.html">
-                      <i class="icon fa fa-question" aria-hidden="true"></i>
-                      Help
-                  </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="sidebar-footer">
-      <ul class="sidebar-body-menu" style="color: white;">
-        <li>
-          <a class="show-cat-btn" href="./settings.html">
-            <i class="icon setting fa fa-wrench" aria-hidden="true" ></i>Settings
-          </a>
-        </li>
-      </ul>
-    </div>
-  </aside>
+  <!-- ! Sidebar --> 
+  <?php include './sidebartemplate.php';?>
   <div class="main-wrapper">
     <!-- ! Main nav -->
-    <nav class="main-nav--bg">
-      <div class="container main-nav">
-        <div class="main-nav-start">
-          <div class="search-wrapper">
-            <input type="text" placeholder="Search" required>
-            <i data-feather="search" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div class="main-nav-end">
-          <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
-            <span class="sr-only">Toggle menu</span>
-            <span class="icon menu-toggle--gray" aria-hidden="true"></span>
-          </button>
-
-          <div class="notification-wrapper">
-            <button class="gray-circle-btn dropdown-btn" title="To messages" type="button">
-              <span class="sr-only">To messages</span>
-              <i class="fa fa-bell" aria-hidden="true"></i>
-            </button>
-            <ul class="users-item-dropdown notification-dropdown dropdown">
-              <li>
-                <a href="##">
-                  <div class="notification-dropdown-icon info">
-                    <i data-feather="check"></i>
-                  </div>
-                  <div class="notification-dropdown-text">
-                    <span class="notification-dropdown__title">System just updated</span>
-                    <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
-                      here.</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="##">
-                  <div class="notification-dropdown-icon danger">
-                    <i data-feather="info" aria-hidden="true"></i>
-                  </div>
-                  <div class="notification-dropdown-text">
-                    <span class="notification-dropdown__title">The cache is full!</span>
-                    <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
-                      interfere ...</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="##">
-                  <div class="notification-dropdown-icon info">
-                    <i data-feather="check" aria-hidden="true"></i>
-                  </div>
-                  <div class="notification-dropdown-text">
-                    <span class="notification-dropdown__title">New Subscriber here!</span>
-                    <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="link-to-page" href="##">Go to Notifications page</a>
-              </li>
-            </ul>
-          </div>
-
-          <button class="gray-circle-btn dropdown-btn" type="button" title="Switch theme">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-          </button>
-
-          <div class="nav-user-wrapper">
-            <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
-              <span class="sr-only">My profile</span>
-              <span class="nav-user-img">
-                <picture><source srcset="./Assets/img/profile.png" type="image/webp"><img src="./Assets/img/profile.png" alt="User name"></picture>
-              </span>
-            </button>
-            <ul class="users-item-dropdown nav-user-dropdown dropdown">
-              <li><a href="##">
-                  <i data-feather="user" aria-hidden="true"></i>
-                  <span>Profile</span>
-                </a></li>
-              <li><a href="##">
-                  <i data-feather="settings" aria-hidden="true"></i>
-                  <span>Account settings</span>
-                </a></li>
-              <li><a class="danger" href="##">
-                  <i data-feather="log-out" aria-hidden="true"></i>
-                  <span>Log out</span>
-                </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <?php include './mainnavtemplate.php';?>
     <!-- ! Main -->
     <main class="main users single-course-page" id="skip-target">
         <div class="single_course_wrapper">
@@ -193,7 +39,7 @@
               </div>
               <div class="single-course_header course-title">
                 <p>Course</p>
-                <h3>English in Use: Professional Application and Beyond 
+                <h3>English 101: Basic Skills and Comprehension 
                 </h3>
                 <p>with Tammy R.</p>
               </div>
@@ -207,7 +53,7 @@
               <div class="course-content_wrapper">
                 <div class="course-content course-description">
                   <h3>Course Description</h3>
-                  <p>During this course, students will incorporate everything they’ve learned in terms of grammar, vocabulary, and professional development. Through real-life work scenarios, students will focus mostly on producing language through speaking and writing. Students will participate in various projects and activities to further demonstrate their knowledge and comprehension of the English language.</p>
+                  <p>In this course, students will be introduced to the English language through vocabulary and grammar. Students will learn to talk about themselves, their families, work, daily routines, and more. Through various speaking, reading, writing, and listening exercises, students will become more familiar with the language and build confidence in using the language. </p>
                 </div>
               </div>
             </div>
