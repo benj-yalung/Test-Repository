@@ -9,6 +9,7 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./Assets/css/registration.css">
+    <link rel="stylesheet" href="Assets/css/login.css">
     <link href="https://fonts.cdnfonts.com/css/amsterdam-2" rel="stylesheet">
 
     <!-- BOOTSTRAP CSS/JS -->
@@ -52,7 +53,7 @@
                                 <a class="nav-link" href="./index.html">Login</a>
                             </li>
                             <li class="nav-item nav-item-btn">
-                                <a class="nav-link custom-btn-white" href="./registration.html">create Account</a>
+                                <a class="nav-link custom-btn-white" href="./registration.html">Create Account</a>
                             </li>
                         </ul>
                     </div>
@@ -71,13 +72,19 @@
                     </div>
                     <div class="form-body">
                         <div class="reg-module">
-                            <div class="reg-teacher">
-                                <img class="teacher_module_img" src="./Assets/img/teacher-module.png" alt="teacher">
+                            <div class="reg-teacher" id="teacher-radio">
+                            <label for="flexRadioDefault1" class="radio-label">   
+                            <!-- <img class="teacher_module_img" src="./Assets/img/teacher-module.png" alt="teacher"> -->
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <span class="reg-teacher-title">Teacher</span>
+                                </label>
                             </div>
-                            <div class="reg-student">
-                                <img class="student_module_img" src="./Assets/img/student-module.png" alt="student">
+                            <div class="reg-student" id="student-radio">
+                            <label for="flexRadioDefault2" class="radio-label">   
+                            <!-- <img class="student_module_img" src="./Assets/img/student-module.png" alt="student"> -->
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                 <span class="reg-student-title">Student</span>
+                                </label>
                             </div>
                         </div>
 
@@ -123,7 +130,7 @@
                         </div>
                         
                         <div class="register_submit_button">
-                            <button type="submit">Create Account</button>
+                            <button  class="btn-login" type="submit">Create Account</button>
                         </div>
                     </div>
                 </form>

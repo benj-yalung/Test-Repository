@@ -16,6 +16,8 @@
 
 /* REGISTRATION */
 
+
+
 .registration-page{
     background: url('../img/register-background.png');
 }
@@ -79,9 +81,25 @@
     justify-content: space-between;
 }
 
-
+/* CHANGES */
+.register_submit_button button{
+    border: none;
+    outline: none;
+ 
+    background-size: cover;
+    color: #fff;
+    padding: .5rem;
+}
+.registration-form form [type=radio]{
+    padding: 10px 10px;
+    margin-right: 10px;
+}
+#lang{
+    padding: 10px;
+    border-radius: 20px;
+}
 .reg-teacher, .reg-student{
-    padding: .8rem;
+    border: 1px solid #737373;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -90,7 +108,16 @@
     width: 40%;
     cursor: pointer;
 }
-
+.radio-label{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+/* END CHANGES */
 .student_module_img, .teacher_module_img {
     height: 80%;
 }
@@ -117,7 +144,7 @@
     margin: .6rem 0;
 }
 
-.registration-form form input{
+.registration-form form [type=text], .registration-form form [type=password],.registration-form form [type=email]{
     border-radius: 20px;
     padding: 10px 15px;
     background-color: #fff;
@@ -151,14 +178,7 @@
     margin: 1rem 0 0 0;
 }
 
-.register_submit_button button{
-    border: none;
-    outline: none;
-    background: url('/Assets/img/register-background.png') center no-repeat;
-    background-size: cover;
-    color: #fff;
-    padding: .5rem;
-}
+
 
 .col.col-img{
     display: grid;

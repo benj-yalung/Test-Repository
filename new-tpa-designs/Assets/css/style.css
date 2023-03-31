@@ -36,12 +36,12 @@ body {
     --custom_primary: #0F0346;
 }
 
-
+/* CHANGES */
 .custom-btn-white{
     text-decoration: none;
     color: var(--custom_primary) !important;
     font-size: 22px;
-    padding: 14px 28px !important;
+    padding: 5px 25px !important;
     border-radius: 27px;
     cursor: pointer;
     background-color: #fff;
