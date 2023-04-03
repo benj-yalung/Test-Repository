@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,13 +17,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body class="d-flex flex-column justify-content-between registration-page">
     <header>
         <div id="header">
             <div class="container  px-3 px-lg-0">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="navbar-brand d-block d-lg-none" href="#">
-                            <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" alt="Brand Logo"></h2></a>
+                        <a href="#">
+                            <h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" alt="Brand Logo"></h2>
+                        </a>
                     </div>
                     <button class="navbar-toggler navbar_toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -46,7 +50,9 @@
                             </li>
                         </ul>
                         <div class="navbar-brand d-none d-lg-block" href="./index.html">
-                            <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" alt="Brand Logo"></h2></a>
+                            <a href="#">
+                                <h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" alt="Brand Logo"></h2>
+                            </a>
                         </div>
                         <ul class="navbar-nav navbar-nav-bottom">
                             <li class="nav-item d-flex align-items-center">
@@ -73,19 +79,44 @@
                     <div class="form-body">
                         <div class="reg-module">
                             <div class="reg-teacher" id="teacher-radio">
-                            <label for="flexRadioDefault1" class="radio-label">   
-                            <!-- <img class="teacher_module_img" src="./Assets/img/teacher-module.png" alt="teacher"> -->
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <span class="reg-teacher-title">Teacher</span>
-                                </label>
+                                <div class="option-reg">
+                                    <label for="teacher-radio-input" class="radio-label">
+
+                                        <div class="   option-img-desc">
+                                            <img class="teacher_module_img" src="./Assets/img/teacher-module.png" alt="teacher">
+
+                                            <span class="reg-teacher-title">Teacher</span>
+                                        </div>
+                                        <div class="radio-status-display">
+                                            <!-- <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"> -->
+                                            <input type="radio" class=" option-input radio" name="example" id="teacher-radio-input"  />
+                                        </div>
+                                    </label>
+                                </div>
                             </div>
                             <div class="reg-student" id="student-radio">
-                            <label for="flexRadioDefault2" class="radio-label">   
-                            <!-- <img class="student_module_img" src="./Assets/img/student-module.png" alt="student"> -->
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                <span class="reg-student-title">Student</span>
+                                <div class="option-reg">
+                                    <label for="student-radio-input" class="radio-label">
+
+                                        <div class="  option-img-desc">
+
+                                            <img class="student_module_img" src="./Assets/img/student-module.png" alt="student">
+                                            <span class="reg-student-title">Student</span>
+                                        </div>
+                                        <div class="radio-status-display">
+                                            <!-- <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"> -->
+                                            <input type="radio" class="  option-input radio" name="example" id="student-radio-input" />
+                                        </div>
+                                </div>
+
                                 </label>
                             </div>
+ 
+
+ 
+ 
+
+
                         </div>
 
                         <div class="reg-name">
@@ -128,9 +159,9 @@
                                 <input type="password" name="confirmPass" id="confirmPass">
                             </div>
                         </div>
-                        
+
                         <div class="register_submit_button">
-                            <button  class="btn-login" type="submit">Create Account</button>
+                            <button class="btn-login" type="submit">Create Account</button>
                         </div>
                     </div>
                 </form>
@@ -142,5 +173,19 @@
             <p>© 2022 All Rights Reserved. Talent Pro Academy</p>
         </div>
     </footer>
+  <script>
+
+
+ 
+ 
+
+ 
+
+  </script>
+      
+    
 </body>
+
+
+
 </html>
