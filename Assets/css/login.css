@@ -96,7 +96,7 @@ input#rememberMe {
 
 .form-login-btn {
     padding: 30px 0px;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -282,6 +282,10 @@ p.box-sub-heading {
     .login-form-box{
         height: auto;
         width: auto;
+    }
+
+    .banner-box{
+        padding: 18px 0px 0px;
     }
 
     .banner-box h2:nth-child(1){

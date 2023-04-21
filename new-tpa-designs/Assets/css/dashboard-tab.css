@@ -342,6 +342,10 @@ margin-bottom: 1rem;
 color: #fff;
 border-radius: 20px;
 background: #fff;
+ 
+}
+.tutor-ad.tutor__ad--items {
+  gap: 14px;
 }
 
 /* .tutor-ad{

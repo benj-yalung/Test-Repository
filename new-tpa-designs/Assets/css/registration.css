@@ -149,14 +149,14 @@
     color: #0F0346;
     box-sizing: border-box;
     border: 1px solid #0F0346;
-    padding: 5px 10px;
+    padding: 6px 20px;
     border-radius: 20px;
 }
 
 .registration-form .form-header .form-header__signUp{
     text-decoration: none;
     color: #fff;
-    padding: 5px 10px;
+    padding: 6px 20px;
     background-color: #0F0346;
     border-radius: 20px;
 }
@@ -174,12 +174,11 @@
 
 /* CHANGES */
 .register_submit_button button{
-    border: none;
+    border-radius: 28px;
     outline: none;
- 
     background-size: cover;
     color: #fff;
-    padding: .5rem;
+    padding: 12px 40px;
 }
 .registration-form form [type=radio]{
  
@@ -268,7 +267,7 @@
 .register_submit_button{
     display: flex;
     justify-content: center;
-    margin: 1rem 0 0 0;
+    margin: 3rem 0 0 0;
 }
 
 
@@ -301,7 +300,7 @@
 @media only screen and (max-width: 500px){
     .registration-form{
         max-width: 420px;
-        margin: 2rem 0;
+        /* margin: 2rem 0; */
     }
 
     .reg-module{

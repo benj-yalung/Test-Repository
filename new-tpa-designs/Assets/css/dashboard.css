@@ -2926,3 +2926,31 @@ label {
         min-width: 180px;
     }
 }
+
+/** Dashboad Responsive **/
+
+@media only screen and (max-width: 600px){
+	.progress-container .progress-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .progress-container .progress-items > .progress__col {
+        width: 100%;
+        text-align: center;
+    }
+    .progress-items .progress__col.col3 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .progress-items .completion-info {
+        width: 100%;
+    }
+    .tutor-ad.tutor__ad--items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

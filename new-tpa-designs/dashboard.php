@@ -38,7 +38,7 @@
     <!-- ! Main -->
     <main class="main users chart-page" id="skip-target">
       <div class="progress-container">
-        <div class="progress__card">
+        <div class="progress__card progress-items">
           <div class="progress__col course-info">
               <a href="!#" class="course-title">Creative Writing</a>
               <p class="course-percentage">You are 78% complete!</p>
@@ -117,7 +117,7 @@
               </div>
             </div>
           </div>
-          <div class="tutor-ad">
+          <div class="tutor-ad tutor__ad--items">
             <a href="#"><span class="material-symbols-outlined"> add_circle </span></a>
               <h2>Find more courses to excel your future</h2>
               <button type="button" class="btn btn-primary enroll-now-btn">ENROLL NOW</button>
@@ -147,7 +147,7 @@
     <div class="infobar-start">
       <div class="infobar-head">
         <div class="info-head__profile">
-          <img src="/Assets/img/profile.png" alt="User profile">
+          <img src="./Assets/img/profile.png" alt="User profile">
           <h2>Natisha Wolf</h2>
           <span>Student</span>
         </div>

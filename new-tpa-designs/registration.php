@@ -56,10 +56,10 @@
                         </div>
                         <ul class="navbar-nav navbar-nav-bottom">
                             <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="./index.html">Login</a>
+                                <a class="nav-link" href="./index.php">Login</a>
                             </li>
                             <li class="nav-item nav-item-btn">
-                                <a class="nav-link custom-btn-white" href="./registration.html">Create Account</a>
+                                <a class="nav-link custom-btn-white" href="./registration.php">Create Account</a>
                             </li>
                         </ul>
                     </div>
@@ -72,9 +72,9 @@
             <div class="registration-form">
                 <form action="">
                     <div class="form-header">
-                        <a class="form-header__back" href="../index.html">Back</a>
+                        <a class="form-header__back" href="index.php">Back</a>
                         <h2 class="form-header__heading">Create Account</h2>
-                        <a class="form-header__signUp" href="../index.html">Sign In</a>
+                        <a class="form-header__signUp" href="registration.php">Sign In</a>
                     </div>
                     <div class="form-body">
                         <div class="reg-module">
