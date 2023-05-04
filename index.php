@@ -1,4 +1,5 @@
 <?php
+	header("Location: ../new-tpa-designs/");
 	$title = "Top Pro Academy";
 	$bg = 0;
 	$id = 0;
