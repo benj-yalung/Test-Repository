@@ -9,7 +9,7 @@
         <div class="sidebar-body">
             <ul class="sidebar-body-menu">
                 <li>
-                    <a class="show-cat-btn" href="./dashboard.html">
+                    <a class="show-cat-btn" href="./dashboard.php">
                       <i class="icon fa fa-th-large" aria-hidden="true"></i>Dashboard
                     </a>
                 </li>
